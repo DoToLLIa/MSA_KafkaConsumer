@@ -6,7 +6,7 @@ import ru.neoflex.msa.training.kafkaconsumer.BankAccount;
 
 @Component
 public class KafkaConsumerController {
-    @KafkaListener(groupId = "app.1", topics = "bankAccountTopic")
+    @KafkaListener(topics = "bankAccountTopic")
     public void msgListener(BankAccount bankAccount) {
         System.out.println(bankAccount);
     }
