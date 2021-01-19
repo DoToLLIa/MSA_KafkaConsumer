@@ -1,3 +1,5 @@
+package ru.neoflex.msa.training.kafkaconsumer;
+
 import java.util.UUID;
 
 public class BankAccount {
