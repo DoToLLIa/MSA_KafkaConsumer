@@ -7,4 +7,4 @@ RUN cd /MSA_KafkaConsumer && \
     mv /MSA_KafkaConsumer/target/KafkaConsumer-${PROJECT_VERSION}.jar /KafkaConsumer.jar && \
     rm -r /MSA_KafkaConsumer
 EXPOSE 8080
-CMD ["java", "-jar", "/KafkaConsumer.jar", "--spring.config.location=classpath:/application.property"]
+CMD ["java", "-jar", "/KafkaConsumer.jar"]
