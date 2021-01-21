@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumerController {
     @KafkaListener(topics = "bankAccountTopic")
-    public void msgListener(String bankAccount) {
-        System.out.println(bankAccount);
+    public void msgListener(BankAccount bankAccount) {
+        System.out.println(bankAccount.getUuid() + " " + bankAccount.toString());
     }
 }
