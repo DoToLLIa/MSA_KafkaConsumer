@@ -1,4 +1,4 @@
-package ru.neoflex.msa.training.kafkaconsumer;
+package ru.neoflex.msa.training.kafkaproducer;
 
 import java.util.UUID;
 
