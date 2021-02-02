@@ -1,5 +1,5 @@
-FROM dotollia/msa_basedockerimage:0.3
-ARG PROJECT_VERSION=0.3
+FROM dotollia/msa_basedockerimage:0.4
+ARG PROJECT_VERSION=0.4
 RUN mkdir /MSA_KafkaConsumer
 COPY . /MSA_KafkaConsumer
 RUN cd /MSA_KafkaConsumer && \
