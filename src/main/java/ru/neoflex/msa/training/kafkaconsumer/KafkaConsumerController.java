@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 import ru.neoflex.msa.training.cassandrakeyspace.BankAccountModel;
-import ru.neoflex.msa.training.cassandrakeyspace.CassandraConnection;
-import ru.neoflex.msa.training.cassandrakeyspace.CassandraRepository;
 import ru.neoflex.msa.training.kafkaproducer.BankAccount;
 
 @Component
