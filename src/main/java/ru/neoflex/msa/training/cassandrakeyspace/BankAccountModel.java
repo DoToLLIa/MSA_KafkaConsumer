@@ -1,16 +1,22 @@
 package ru.neoflex.msa.training.cassandrakeyspace;
 
+import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-@Table(value = "bank_account")
+@Table("bank_account")
 public class BankAccountModel {
 
     @PrimaryKey
+    @Column("id")
     private String id;
+    @Column("firstName")
     private String firstName;
+    @Column("lastName")
     private String lastName;
+    @Column("patronymic")
     private String patronymic;
+    @Column("accountNumber")
     private Long accountNumber;
 
     public BankAccountModel(String id, String firstName, String lastName, String patronymic, Long accountNumber) {
