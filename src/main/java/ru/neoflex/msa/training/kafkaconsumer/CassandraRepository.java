@@ -8,6 +8,6 @@ import java.io.Serializable;
 import java.util.Optional;
 
 @Repository
-public interface CassandraRepository extends CrudRepository<BankAccountModel, Serializable> {
+public interface CassandraRepository extends org.springframework.data.cassandra.repository.CassandraRepository<BankAccountModel, String> {
     //Optional<BankAccountModel> createBankAccount(String id);
 }
